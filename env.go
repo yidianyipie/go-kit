@@ -4,7 +4,7 @@ import (
 	"crypto/md5"
 	"fmt"
 	"os"
-	"practice.com/go-kit/constant"
+	"github.com/yidianyipie/go-kit/constant"
 )
 
 var (

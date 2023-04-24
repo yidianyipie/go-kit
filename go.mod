@@ -1,4 +1,4 @@
-module practice.com/go-kit
+module github.com/yidianyipie/go-kit
 
 go 1.20
 

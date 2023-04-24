@@ -1,7 +1,7 @@
 package errcode_test
 
 import (
-	"practice.com/go-kit/errcode"
+	"github.com/yidianyipie/go-kit/errcode"
 	"testing"
 )
 

@@ -5,7 +5,7 @@ import (
 	"github.com/fatih/color"
 	"os"
 	"path/filepath"
-	"practice.com/go-kit/constant"
+	"github.com/yidianyipie/go-kit/constant"
 	"runtime"
 	"strings"
 	"time"

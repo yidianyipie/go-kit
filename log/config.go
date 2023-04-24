@@ -2,7 +2,7 @@ package log
 
 import (
 	"fmt"
-	goKit "practice.com/go-kit"
+	goKit "github.com/yidianyipie/go-kit"
 	"time"
 
 	"go.uber.org/zap"

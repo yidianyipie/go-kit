@@ -3,7 +3,7 @@ package log
 import (
 	"io"
 
-	"practice.com/go-kit/log/rotate"
+	"github.com/yidianyipie/go-kit/log/rotate"
 )
 
 // newRotate 一个滚动记录日志的文件LogWriter

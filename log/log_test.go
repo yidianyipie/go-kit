@@ -2,7 +2,7 @@ package log_test
 
 import (
 	"context"
-	"practice.com/go-kit/log"
+	"github.com/yidianyipie/go-kit/log"
 	"testing"
 	"time"
 

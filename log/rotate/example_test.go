@@ -3,7 +3,7 @@ package rotate_test
 import (
 	"log"
 
-	"practice.com/go-kit/log/rotate"
+	"github.com/yidianyipie/go-kit/log/rotate"
 )
 
 // To use rotate with the standard library's log package, just pass it into
