@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"practice.com/go-kit/log/rotate"
+	"github.com/yidianyipie/go-kit/log/rotate"
 )
 
 // Example of how to rotate in response to SIGHUP.
