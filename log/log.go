@@ -45,6 +45,8 @@ var (
 	ByteString = zap.ByteString
 	// Array ...
 	Array = zap.Array
+	// Time ...
+	Time = zap.Time
 )
 
 const (
