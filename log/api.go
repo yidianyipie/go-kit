@@ -118,7 +118,7 @@ func FatalW(msg string, keysAndValues ...interface{}) {
 // DebugC 记录一条带上下文的Debug级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func DebugC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Debug(msg, fields...)
 }
@@ -126,7 +126,7 @@ func DebugC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // InfoC 记录一条带上下文的Info级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func InfoC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Info(msg, fields...)
 }
@@ -134,7 +134,7 @@ func InfoC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // WarnC 记录一条带上下文的Warn级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func WarnC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Warn(msg, fields...)
 }
@@ -142,7 +142,7 @@ func WarnC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // ErrorC 记录一条带上下文的Error级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func ErrorC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Error(msg, fields...)
 }
@@ -150,7 +150,7 @@ func ErrorC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // DPanicC 记录一条带上下文的DPanic级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func DPanicC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.DPanic(msg, fields...)
 }
@@ -158,7 +158,7 @@ func DPanicC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // PanicC 记录一条带上下文的Panic级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func PanicC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Panic(msg, fields...)
 }
@@ -166,7 +166,7 @@ func PanicC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 // FatalC 记录一条带上下文的Fatal级别的消息。根据传递的kv信息构造zap field。该消息包括这些字段，trace_id追踪字段，以及日志记录器上累积的所有字段。
 func FatalC(ctx context.Context, msg string, keysAndValues ...interface{}) {
 	var fields = make([]Field, 0, len(keysAndValues)+1)
-	fields = append(fields, Any(traceIDField, ctx.Value(traceIDField)))
+	fields = append(fields, Any(TraceIDField, ctx.Value(TraceIDField)))
 	fields = append(fields, sweetenFields(keysAndValues)...)
 	stdLogger.Fatal(msg, fields...)
 }
