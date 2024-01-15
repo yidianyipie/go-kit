@@ -50,7 +50,7 @@ var (
 	// Time ...
 	Time = zap.Time
 	// Error ...
-	Error = zap.Error
+	// Error = zap.Error
 )
 
 const (
